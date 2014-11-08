@@ -18,7 +18,7 @@ which fails if value is either null or undefined.
 
 ### _.isReachable
 
-The other main utilyt added is:
+The other main utily added is:
 
 
 ```
