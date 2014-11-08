@@ -6,14 +6,17 @@ Underscore Plus
 
 A simple set of additions to underscore.js
 
+## _.exists
 
-The main and most useful part is just 
+The main and most useful part is just: 
 
 ``` _.exists(value) ```
 
 which fails if value is either null or undefined.
 
 
+
+## _.isReachabl
 
 The other main utilyt added is:
 
