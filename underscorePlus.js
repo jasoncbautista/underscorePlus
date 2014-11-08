@@ -24,6 +24,7 @@ _.mixin({
    *
    * @param  {Object} base, a hash
    * @param  {String} _string a string that represents what should be called
+   * @param  {Object} _default a default value to return in case of failure
    * @return {Object}  returns an object of the form:
    *    {value: "value", failedStep: ""}
    */
@@ -40,6 +41,8 @@ _.mixin({
       if (_.isReal(currBase[currEntry])) {
         returnValue.value = currBase[currEntry];
       } else {
+        // In case we fail, we just return where
+        // we failed and the default object provided
         return {
           value: _default,
           failedStep: currEntry
