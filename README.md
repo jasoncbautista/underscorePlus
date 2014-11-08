@@ -6,7 +6,7 @@ Underscore Plus
 
 A simple set of additions to underscore.js
 
-## _.exists
+### _.exists
 
 The main and most useful part is just: 
 
@@ -16,7 +16,7 @@ which fails if value is either null or undefined.
 
 
 
-## _.isReachabl
+### _.isReachable
 
 The other main utilyt added is:
 
