@@ -27,7 +27,7 @@ _.mixin({
    * @return {Object}  returns an object of the form:
    *    {value: "value", failedStep: ""}
    */
-  isReachable: function(base, _string) {
+  isReachable: function(base, _string, _default) {
     var list = _string.split(".");
     var listLength = list.length;
     var returnValue = {
@@ -41,7 +41,7 @@ _.mixin({
         returnValue.value = currBase[currEntry];
       } else {
         return {
-          value: null,
+          value: _default,
           failedStep: currEntry
         };
       }
