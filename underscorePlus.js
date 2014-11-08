@@ -16,8 +16,8 @@ _.mixin({
    *
    *  So the object we pass is b like this:
    *
-   *  var result = _.isReachable(b, "m.x.y.z");
-   *  if (_.isReal(result.value)) {
+   *  var result = _.isReachable(b, "m.x.y.z", null);
+   *  if (_.exists(result.value)) {
    *    result.value("example");
    *  }
    *
@@ -38,7 +38,7 @@ _.mixin({
     var currBase = base;
     for (var ii = 0; ii < listLength; ii++) {
       var currEntry = list[ii];
-      if (_.isReal(currBase[currEntry])) {
+      if (_.exists(currBase[currEntry])) {
         returnValue.value = currBase[currEntry];
       } else {
         // In case we fail, we just return where
