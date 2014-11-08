@@ -1,8 +1,8 @@
 _.mixin({
 
   // Makes sure that arg is anything but null/undefined
-  isReal: function(arg) {
-    return !_.isNotReal(arg);
+  exists: function(arg) {
+    return !_.doesNotExist(arg);
   },
 
   /**
@@ -55,7 +55,7 @@ _.mixin({
   },
 
   // Returns true if arg euqlas null/undefined
-  isNotReal: function(arg) {
+  doesNotExist: function(arg) {
     return arg == null;
   },
 
