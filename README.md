@@ -77,4 +77,9 @@ Or maybe the last variable is either x,y or z.
 
 
 
+# _.getDeep -> _.isReachable(obj, _string, null).value
+
+
+_.sort  -> take in comparison function
+
 
