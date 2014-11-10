@@ -83,3 +83,9 @@ Or maybe the last variable is either x,y or z.
 _.sort  -> take in comparison function
 
 
+
+
+Recursive search of object keys for a given key name
+
+
+Auto complete on key names -- subtring matches
