@@ -1,8 +1,13 @@
 _.mixin({
 
-  // Makes sure that arg is anything but null/undefined
+  // Makes sure that arg is anything but null/undefined.
   exists: function(arg) {
     return !_.doesNotExist(arg);
+  },
+
+  // Returns arg is defined otherwise returns _default.
+  getIf: function(arg, _default{
+    return _.exists(arg)? arg: _default;
   },
 
   /**
