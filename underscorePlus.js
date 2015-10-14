@@ -6,7 +6,7 @@ _.mixin({
   },
 
   // Returns arg is defined otherwise returns _default.
-  getIf: function(arg, _default{
+  getIf: function(arg, _default){
     return _.exists(arg)? arg: _default;
   },
 
