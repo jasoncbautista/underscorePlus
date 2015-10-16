@@ -4,7 +4,7 @@ underscorePlus
 Underscore Plus
 
 
-A simple set of additions to underscore.js
+A simple set of additions to underscore.js.
 
 ### _.exists
 
